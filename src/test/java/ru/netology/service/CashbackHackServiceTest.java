@@ -4,10 +4,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-class CashbackHackServiceTest {
+public class CashbackHackServiceTest {
 
     @Test
-    void shouldReturn100IfAmountIs900() {
+    public void shouldReturn100IfAmountIs900() {
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
         int expected = 100;
@@ -18,7 +18,7 @@ class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldReturn1000IfAmountIs0() {
+    public void shouldReturn1000IfAmountIs0() {
         CashbackHackService service = new CashbackHackService();
         int amount = 0;
         int expected = 1000;
@@ -29,7 +29,7 @@ class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldReturn0IfAmountIs1000() {
+    public void shouldReturn0IfAmountIs1000() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
         int expected = 0;
